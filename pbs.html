@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Particle-based simulations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Home</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="AST.html">Seperation modeling</a></li>
+							<li><a href="ACRE.html">Reactor modeling</a></li>
+							<li><a href="multiphase.html">Multiphase CFD</a></li>
+							<li><a href="catalysis.html">Catalysis</a></li>
+							<li><a href="pbs.html">Particle-based simulations</a></li>
+							<li><a href="ml.html">Machine learning</a></li>
+						</ul>
+						<ul class="actions stacked">
+                            <li><a href="https://github.com/ajmisa/ast-project" class="button primary icon brands fa-github" target="_blank">View on GitHub</a></li>
+                    </ul>
+					</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+                        <section id="one">
+                            <div class="inner">
+                                <header class="major">
+                                    <h2>Particle-Based Simulations</h2>
+                                </header>
+                                <p>
+                                    This portfolio features a series of simulations developed in C for the Particle-Based Simulations (6EMA02) course at TU/e. The work spans molecular dynamics, dissipative particle dynamics (DPD), and discrete element method (DEM) simulations—each offering insight into the mechanics of complex physical systems.
+                                </p>
+                                <p>
+                                    Projects include the N-body simulation of planetary motion, molecular dynamics of a supercritical methane-ethane mixture, phase separation and χ-parameter analysis in binary fluids via DPD, and granular flow modeling in a rotating drum using DEM. Each study emphasizes algorithmic development, numerical stability, and validation against theoretical or experimental references.
+                                </p>
+                            </div>
+                        </section>
+
+                          
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+                                    <a href="images/rpm200.png" class="image" target="_blank">
+                                        <img src="images/rpm200.png" alt="Granular Flow in Rotating Drum" />
+                                    </a>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <header class="major">
+                                                <h3>Granular Flow in a Rotating Drum</h3>
+                                            </header>
+                                            <p>
+                                                This project implements a Discrete Element Method (DEM) simulation of glass beads in a rotating drum to study granular flow regimes. By varying rotation speeds and friction coefficients, the simulation captures slumping, rolling, cascading, cataracting, and centrifuging transitions—validated against the flow map from Yang et al. (2008).
+                                            </p>
+                                            <p>
+                                                Additional studies evaluated rolling friction, particle-particle restitution, and the angle of repose as a function of Froude number and material properties. Results aligned with both analytical predictions and experimental benchmarks, demonstrating accurate implementation of DEM physics.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <a href="images/Chain N8.png" class="image" target="_blank">
+                                        <img src="images/Chain N8.png" alt="DPD Simulation – Bead-Spring Chains" />
+                                    </a>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <header class="major">
+                                                <h3>Dissipative Particle Dynamics of Binary Mixtures and Polymers</h3>
+                                            </header>
+                                            <p>
+                                                This project implements the DPD method to simulate phase behavior in binary mixtures and polymer chains. Conservative, dissipative, and random forces were developed in C, with energy conservation and velocity statistics verified against theoretical expectations.
+                                            </p>
+                                            <p>
+                                                Binary phase separation was studied by tuning interaction strengths and calculating the Flory-Huggins χ-parameter. Bead-spring chains of increasing length were modeled to investigate polymer conformations and interfacial segregation.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <a href="images/dt01step100000_timestep500.png" class="image" target="_blank">
+                                        <img src="images/dt01step100000_timestep500.png" alt="Equilibration of CH₄–C₂H₆ Mixture Over Time" />
+                                    </a>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <header class="major">
+                                                <h3>Molecular Dynamics of Methane–Ethane Mixtures</h3>
+                                            </header>
+                                            <p>
+                                                This project investigates the structural and dynamic properties of a supercritical binary mixture of methane and ethane using a custom molecular dynamics engine. Both bonded (ethane) and non-bonded (methane) interactions were modeled using Lennard-Jones potentials, with Lorentz-Berthelot mixing rules.
+                                            </p>
+                                            <p>
+                                                The implementation includes a Berendsen thermostat for NVT control, velocity distribution analysis, radial distribution function computation, and mean squared displacement tracking. The diffusion coefficients and equilibration dynamics were benchmarked against theoretical predictions, validating both code and physical models.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <a href="images/VV_10_3d.png" class="image" target="_blank">
+                                        <img src="images/VV_10_3d.png" alt="Solar System Simulation – Velocity-Verlet, 10-day Timestep" />
+                                    </a>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <header class="major">
+                                                <h3>N-Body Simulation of the Solar System</h3>
+                                            </header>
+                                            <p>
+                                                This project models the gravitational interactions between celestial bodies in the solar system using the Velocity-Verlet integrator. Newton’s equations of motion were implemented in C to simulate planetary trajectories and assess energy conservation over long timescales.
+                                            </p>
+                                            <p>
+                                                The study compares Velocity-Verlet, symplectic Euler, and explicit Euler methods in terms of stability and accuracy. Simulation results show that Velocity-Verlet offers better energy conservation and orbit fidelity, even with larger time steps, making it ideal for long-term astrophysical dynamics.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+
+								  
+							</section>
+
+
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        <ul class="icons">
+                            <p>Email: <a href="mailto:aj.misa@outlook.com">aj.misa@outlook.com</a></p>
+                            <li><a href="https://github.com/ajmisa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/adam-misa/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>																
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; 2025 Adam Misa</li>
+                            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                          </ul>							  
+                    </div>
+                </footer>
+
+        </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

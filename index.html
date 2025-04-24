@@ -1,128 +1,170 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
+	Forty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Portfolio by Adam Misa</title>
+		<title>Forty by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		#banner .content p {
+		text-transform: none !important;
+		}
+		</style>
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Hi, I'm Adam</h1>
-						<p>Here, you can find my Portfolio. A showcase of my projects and my skills.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Home</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
+				<!-- Menu -->
+					<nav id="menu">
 						<ul class="links">
-							<li class="active"><a href="index.html">Professional Summary</a></li>
+							<li><a href="AST.html">Seperation modeling</a></li>
+							<li><a href="ACRE.html">Reactor modeling</a></li>
+							<li><a href="multiphase.html">Multiphase CFD</a></li>
+							<li><a href="catalysis.html">Catalysis</a></li>
+							<li><a href="pbs.html">Particle-based simulations</a></li>
+							<li><a href="ml.html">Machine learning</a></li>
 						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/adam-misa/" class="icon brands alt fa-linkedin"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/drench.adam/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://github.com/ajmisa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
+						<ul class="actions stacked">
+							<li><a href="https://github.com/ajmisa/ast-project" class="button primary icon brands fa-github" target="_blank">View on GitHub</a></li>
+					</ul>
 					</nav>
+
+				<!-- Banner -->
+				<section id="banner" class="major">
+					<div class="inner">
+					<header class="major">
+						<h1>Hi, my name is Adam</h1>
+					</header>
+						<p>
+						Welcome to my portfolio. I'm a graduate chemical engineer currently pursuing a Master’s degree at TU/e, with experience in project leadership, quality management, and advanced simulation. Skilled in applying engineering tools across academic and industrial settings. Highly motivated, adaptable, and eager to contribute to interdisciplinary teams through analytical thinking and continuous learning.
+						</p>
+					</div>
+				</section>
+  
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Professional Summary</a></h2>
-									<p>A 2020 Chemical Engineer graduate of University of Patras and experience in Digital Skills such as MATLAB, Python and Aspen Plus. Interested in process engineering, process control and data science. A strong willingness to continually learn and a brave willingness to face a variety of challenges. Generally eager to discover and learn new things in the field of science, as well as test and push the boundaries of technology, especially in the field of machine learning and data science and push them into practice on an industrial scale.
-										</p>
-								</header>
-								<a class="image main"><img src="images/Trice_3D_Design.png" alt="" /></a>
-								<p> Plant design and techno-economic analysis of cellulase production from Trichoderma reesei toward lignocellulosic biomass breakdown.</p>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
+						<!-- One -->
+							<section id="one" class="tiles">
 								<article>
-									<header>
-										<h2>King County House's prices</h2>
+									<span class="image">
+									  <img src="images/ConcentrationProfiles.png" alt="FAME Concentration Profile" />
+									</span>
+									<header class="major">
+									  <h3><a href="ACRE.html" class="link">Biodiesel Production in RS-SDR</a></h3>
+									  <p>Mechanistic modeling of three-phase (liquid-liquid-solid) transesterification in RS-SDR: homogeneous, slurry, and coated-disc systems.</p>
 									</header>
-									<a class="image fit"><img src="images/King_County_mapping.png" alt="" /></a>
-									<p>This project focuses on exploratory data analysis and preprocessing of data in order to construct a model. We are using keras regression to predict the King County house prices based on the house's features. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ajmisa/King-County-House-s-price/blob/main/King%20County%20House's%20prices.ipynb" class="button">Check the Code</a></li>
-									</ul>
+								  </article>
+								<article>
+									<span class="image">
+									  <img src="images/PFD_diagram.png" alt="CO₂ Capture Process Simulation - PFD" />
+									</span>
+									<header class="major">
+									  <h3><a href="AST.html" class="link">CO₂ Capture in Cement Plants</a></h3>
+									  <p>Simulation and techno-economic analysis of MEA-based CO₂ capture for cement plants, optimizing absorber-stripper configurations and energy use.</p>
+									</header>
+								  </article>
+								  <article>
+									<span class="image">
+										<img src="images/5e-5_Dynamic_angle_sim.png" alt="Multiphase CFD Projects" />
+									</span>
+									<header class="major">
+										<h3><a href="multiphase.html" class="link">Multiphase CFD Projects</a></h3>
+										<p>Droplet impact, heat transfer, spray modeling, and fluidized beds in OpenFOAM — benchmarked, validated, and compared.</p>
+									</header>
 								</article>
+																													 
 								<article>
-									<header>
-										<h2>Lending Club Loans</h2>
+									<span class="image">
+										<img src="images/final_IR.png" alt="Catalysis Portfolio" />
+									</span>
+									<header class="major">
+										<h3><a href="catalysis.html" class="link">Catalysis Projects</a></h3>
+										<p>
+											Mechanistic analysis, kinetic modeling, and numerical simulation of catalytic systems, covering CO₂ methanation over inverse CeOx/Co catalysts, methanol synthesis kinetics, and reaction–diffusion behavior.
+										</p>										
 									</header>
-									<a class="image fit"><img src="images/loan_image.png" alt="" /></a>
-									<p> Given historical data on loans given out with information on whether or not the borrower defaulted (charge-off). In this project, we build a model that can predict whether or not a borrower will pay back their loan. This way in the future when we get a new potential customer we can assess whether or not they are likely to pay back the loan. In our project, we are using Keras regression, and there is a lot of data processing, as there are many customer-specific features.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ajmisa/Lending-Club-Loan-Project/blob/main/Lending%20Club%20Loan%20Project.ipynb" class="button">Check the code</a></li>
-									</ul>
 								</article>
 								
-						<!-- Footer -->
-							
+								<article>
+									<span class="image">
+										<img src="images/rpm200.png" alt="Granular Flow and Molecular Simulation" />
+									</span>
+									<header class="major">
+										<h3><a href="pbs.html" class="link">Particle-Based Simulation Projects</a></h3>
+										<p>Molecular dynamics, DPD, and DEM simulations exploring planetary motion, supercritical mixtures, and granular flow in rotating drums.</p>
+									</header>
+								</article>
+								
+								<article>
+	<span class="image">
+		<img src="images/King_County_mapping.png" alt="Housing Prices in King County – Geographic Distribution" />
+	</span>
+	<header class="major">
+		<h3><a href="ml.html" class="link">Data Science & ML Projects</a></h3>
+		<p>Regression, classification, and interpretability in real-world datasets: housing prices and peer-to-peer lending risks.</p>
+	</header>
+</article>
+
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>Open to Opportunities</h2>
+									  </header>
+									  <p>
+										Thank you for exploring my work. I'm always looking for new challenges, whether in process optimization, data-driven modeling, or cross-functional engineering projects. If you’re interested in working together or want to discuss an idea, feel free to reach out!
+									  </p>
+									  <ul class="actions">
+										<li><a href="mailto:aj.misa@outlook.com" class="button next">Contact Me</a></li>
+									  </ul>
+								</div>
+							</section>
 
 					</div>
+
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Netherlands, Bredehof 33, Espel,<br />
-								 8311AJ</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="tel:+3168831558">(+31) 683361558</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:adamix.sami@gmail.com">adamix.sami@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/adam-misa/" class="icon brands alt fa-linkedin"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/drench.adam/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://github.com/ajmisa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
+						<div class="inner">
+							<ul class="icons">
+								<p>Email: <a href="mailto:aj.misa@outlook.com">aj.misa@outlook.com</a></p>
+								<li><a href="https://github.com/ajmisa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/adam-misa/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>																
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2025 Adam Misa</li>
+								<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							  </ul>							  
+						</div>
 					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chemical Reactor Engineering</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Home</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="AST.html">Seperation modeling</a></li>
+							<li><a href="ACRE.html">Reactor modeling</a></li>
+							<li><a href="multiphase.html">Multiphase CFD</a></li>
+							<li><a href="catalysis.html">Catalysis</a></li>
+							<li><a href="pbs.html">Particle-based simulations</a></li>
+							<li><a href="ml.html">Machine learning</a></li>
+						</ul>
+						<ul class="actions stacked">
+								<li><a href="https://github.com/ajmisa/ast-project" class="button primary icon brands fa-github" target="_blank">View on GitHub</a></li>
+						</ul>
+					</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+                        <section id="one">
+                            <div class="inner">
+                              <header class="major">
+                                <h2>Advanced Reactor Engineering for Biodiesel Production</h2>
+                              </header>
+                              <p>
+                                This project investigates biodiesel synthesis through transesterification in a rotating spinning disc reactor (RS-SDR). Three configurations were modeled: a homogeneous base-catalyzed system, a slurry-phase catalyst setup, and a coated-disc reactor. The objective was to analyze conversion, mass transfer performance, and kinetic behavior under industrially relevant conditions.
+                              </p>
+                              <p>
+                                Each reactor design was simulated using MATLAB, incorporating mechanistic rate expressions, multiphase transport dynamics, and catalyst efficiency correlations. Results highlight how reactor configuration affects conversion and productivity, guiding scale-up strategies for continuous biodiesel production.
+                              </p>
+                            </div>
+                          </section>
+                          
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+                                    <a href="images/ConcentrationProfiles.png" class="image" target="_blank">
+                                      <img src="images/ConcentrationProfiles.png" alt="Concentration Profile – Homogeneous System" />
+                                    </a>
+                                    <div class="content">
+                                      <div class="inner">
+                                        <header class="major">
+                                          <h3>Homogeneous System</h3>
+                                        </header>
+                                        <p>
+											The homogeneous system models a two-phase transesterification reaction catalyzed by NaOH in methanol, dispersed within triglyceride-rich oil. The simulation captures phase-specific reaction kinetics and mass transfer limitations. At 100 rad/s, the conversion reached 74%, with excess methanol shifting the system from diffusion-limited to kinetically driven performance.
+										  </p>										  
+                                      </div>
+                                    </div>
+                                  </section>
+                                  
+                                  <section>
+                                    <a href="images/Mass transfer_slurry.png" class="image" target="_blank">
+                                      <img src="images/Mass transfer_slurry.png" alt="Slurry-Phase RS-SDR Catalyst Model" />
+                                    </a>
+                                    <div class="content">
+                                      <div class="inner">
+                                        <header class="major">
+                                          <h3>Slurry-Phase System</h3>
+                                        </header>
+                                        <p>
+											In the slurry-phase configuration, sodium metasilicate nanoparticles are suspended within the methanol droplets, acting as mobile catalysts. The model includes external and internal mass transfer resistances as well as reaction kinetics at the oil–methanol interface. This setup achieved the highest overall conversion (~82%) and FAME productivity, benefiting from high catalyst surface area and improved dispersion.
+										  </p>										  
+                                      </div>
+                                    </div>
+                                  </section>
+                                  
+								  <section>
+									<a href="images/Cat_thick_vs_Conversion.png" class="image" target="_blank">
+									  <img src="images/Cat_thick_vs_Conversion.png" alt="Coated-Disc RS-SDR Reactor Diagram" />
+									</a>
+									<div class="content">
+									  <div class="inner">
+										<header class="major">
+										  <h3>Coated-Disc System</h3>
+										</header>
+										<p>
+											The coated-disc configuration utilizes a thin film of immobilized Na₂SiO₃ catalyst on the rotating disc surface. The process is modeled under kinetic control, with catalyst reactivity governed by surface Brønsted acid sites. While conversion was slightly lower (~77.7%) than the slurry system, the design offers operational stability, minimal MEA loss, and ease of catalyst recovery — making it well-suited for continuous industrial operation.
+										  </p>										  
+										<ul class="actions">
+                                            <li><a href="https://github.com/ajmisa/ast-project" class="button primary icon brands fa-github" target="_blank">View on GitHub</a></li>
+                                        </ul>
+									  </div>
+									</div>
+								  </section>
+								  
+							</section>
+
+
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        <ul class="icons">
+                            <p>Email: <a href="mailto:aj.misa@outlook.com">aj.misa@outlook.com</a></p>
+                            <li><a href="https://github.com/ajmisa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/adam-misa/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>																
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; 2025 Adam Misa</li>
+                            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                          </ul>							  
+                    </div>
+                </footer>
+
+        </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
