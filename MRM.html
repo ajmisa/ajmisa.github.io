@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chemical reactor engineering</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Home</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="APD.html">Methanol Synthesis PFD</a></li>
+							<li><a href="MRM.html">Biomass Pyrolisis modelling</a></li>
+							<li><a href="AST.html">Seperation modeling</a></li>
+							<li><a href="ACRE.html">Reactor modeling</a></li>
+							<li><a href="multiphase.html">Multiphase CFD</a></li>
+							<li><a href="catalysis.html">Catalysis</a></li>
+							<li><a href="pbs.html">Particle-based simulations</a></li>
+							<li><a href="ml.html">Machine learning</a></li>
+						</ul>
+						<ul class="actions stacked">
+								<li><a href="https://github.com/ajmisa/ast-project" class="button primary icon brands fa-github" target="_blank">View on GitHub</a></li>
+						</ul>
+					</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+                            <section id="one">
+                                <div class="inner">
+                                <header class="major">
+                                    <h2>Coupled Particle–Reactor Model for Biomass Pyrolysis</h2>
+                                </header>
+                                <p>
+                                    This project, completed for the 6EMA06 Multiphase Reactor Modeling course at TU/e, presents a multi-scale model that couples intra-particle pyrolysis dynamics with a 2D fluidized bed reactor. The particle model resolves radial transport and reaction phenomena (including drying, devolatilization, and secondary cracking), and exchanges source terms with the reactor model to predict species evolution and product distribution.
+                                </p>
+                                <p>
+                                    The framework captures the strong dependency of pyrolysis behavior on particle size and location within the reactor. Governing equations were solved using a finite volume method in Python, with implicit backward Euler integration and Newton-Raphson iteration to resolve stiff nonlinearities. Outputs include transient intra-particle profiles and species distributions in the fluidized bed.
+                                </p>
+                                </div>
+                            </section>
+                          
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+                                    <a href="images/Particle_DensityR5e-3.png" class="image" target="_blank">
+                                        <img src="images/Particle_DensityR5e-3.png" alt="Particle Density vs. Time and Radius during Pyrolysis" />
+                                    </a>
+                                    <div class="content">
+                                        <div class="inner">
+                                        <header class="major">
+                                            <h3>Intra-Particle Decomposition</h3>
+                                        </header>
+                                        <p>
+                                            The particle-scale model captures the progressive loss of biomass density due to drying, tar formation, and gas evolution. This 3D surface plot shows the evolution of solid-phase density over time and radial position. A dense biomass core remains intact until local temperature and reaction rates enable full conversion, resulting in the clear propagating decomposition front.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <a href="images/Gas and Tar results.png" class="image" target="_blank">
+                                        <img src="images/Gas and Tar results.png" alt="2D Concentration Fields in Fluidized Bed" />
+                                    </a>
+                                    <div class="content">
+                                        <div class="inner">
+                                        <header class="major">
+                                            <h3>Reactor-Scale Species Profiles</h3>
+                                        </header>
+                                        <p>
+                                            Tar and gas concentrations are shown across the radial and axial dimensions in both bubble and emulsion phases after 25 s. High concentrations of tar near the wall regions indicate poor convective transport there, while gases peak along the centerline. These spatial variations emphasize the importance of hydrodynamics in influencing product yields.
+                                        </p>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/ajmisa/Biomass-pyrolysis-in-fluidized-bed" class="button primary icon brands fa-github" target="_blank">View on GitHub</a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </section>
+								  
+							</section>
+
+
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        <ul class="icons">
+                            <p>Email: <a href="mailto:aj.misa@outlook.com">aj.misa@outlook.com</a></p>
+                            <li><a href="https://github.com/ajmisa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/adam-misa/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>																
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; 2025 Adam Misa</li>
+                            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                          </ul>							  
+                    </div>
+                </footer>
+
+        </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
